@@ -21,6 +21,9 @@ class Tendril
   public void show()
   {
     stroke(255-myNumSegments*5);
+    if(myNumSegments < 2) {
+      stroke(255,100,100);
+    }
     int startX = myX;
     int startY = myY;
     int endX, endY;
